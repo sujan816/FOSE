@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+
+/* Navigation bar */
+
+.navbar {
+    width: calc(100% - 20px);
+    height: 73px;
+
+    margin: 10px;
+
+    background-color: #333333;
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 140px;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 55px;
+    height: 35px;
+    object-fit: contain;
+}
+
+
+/* Navigation links */
+
+.navbar a {
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+/* Main profile box */
+
+.profile-card {
+    width: 554px;
+    height: 650px;
+
+    margin: 63px auto 0;
+
+    padding: 45px 48px 25px;
+
+    background-color: #d3d3d3;
+
+    border: 2px solid black;
+
+    text-align: center;
+}
+
+
+/* Name */
+
+.profile-card h1 {
+    margin: 4px 0 20px;
+
+    color: #010113;
+
+    font-size: 36px;
+}
+
+
+/* Student image */
+
+.student-photo {
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid rgb(61, 0, 0);
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto 22px;
+}
+
+
+/* Section headings */
+
+.profile-card h2 {
+    color: rgb(19, 27, 19);
+
+    font-size: 29px;
+
+    margin: 18px 0 22px;
+}
+
+
+/* About paragraph */
+
+.profile-card p {
+    margin: 0 auto;
+
+    line-height: 1.2;
+}
+
+
+/* Skills list */
+
+.profile-card ul {
+    width: 150px;
+
+    margin: 0 auto 25px;
+
+    padding-left: 25px;
+
+    text-align: left;
+}
+
+.profile-card li {
+    margin: 3px 0;
+}
+
+
+/* Website section */
+
+#website h2 {
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+
+
+/* Website link */
+
+.profile-card a {
+    color: blue;
+
+    text-decoration: underline;
+
+    font-size: 24px;
+}
