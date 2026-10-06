@@ -1,0 +1,149 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: white;
+}
+
+/* Navigation bar */
+.navbar {
+    height: 52px;
+    margin: 7px;
+    padding: 0 7px;
+
+    background-color: #ffe477;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+    .logo {
+    font-size: 12px;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* Hamburger button */
+.menu-button {
+    font-size: 22px;
+    background-color: #f5f5f5;
+    border: 1px solid #aaa;
+    width: 28px;
+    height: 26px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+/* Flexbox card layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 14px;
+}
+
+/* Individual card */
+.card {
+    flex: 1 1 calc((100% - 24px) / 3);
+    min-width: 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mountain image */
+.card-image {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card text area */
+.card-content {
+    flex: 1;
+    padding: 20px 6px 6px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Date */
+.date {
+    color: #ff7b22;
+    font-size: 9px;
+    margin-bottom: 4px;
+}
+
+/* Post heading */
+.card-content h3 {
+    color: #ff7b22;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+/* Description */
+.description {
+    width: 100%;
+    color: black;
+    text-align: justify;
+    font-size: 11px;
+    line-height: 12px;
+    margin-bottom: 15px;
+}
+
+/* View More button */
+.view-button {
+    margin-top: auto;
+    padding: 6px 9px;
+    border: none;
+    border-radius: 7px;
+    background-color: #ffe2c2;
+    color: black;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+}
