@@ -1,23 +1,24 @@
 
-/* Remove default spacing */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Page */
 body {
     font-family: "Times New Roman", serif;
     background-color: white;
+    padding: 4px;
 }
 
 /* Navigation bar */
 .navbar {
-    height: 52px;
-    margin: 7px;
-    padding: 0 7px;
-
+    height: 59px;
     background-color: #ffe477;
+    margin-bottom: 21px;
+    padding: 0 7px 0 13px;
 
     display: flex;
     align-items: center;
@@ -29,62 +30,70 @@ body {
     font-size: 12px;
 }
 
+.logo img {
+    max-width: 100px;
+}
+
 /* Navigation links */
 .nav-links {
     display: flex;
-    gap: 44px;
+    align-items: center;
+    gap: 47px;
 }
 
 .nav-links a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
     font-size: 14px;
 }
 
 /* Hamburger button */
 .menu-button {
-    font-size: 22px;
+    width: 30px;
+    height: 27px;
+    font-size: 21px;
+    line-height: 20px;
     background-color: #f5f5f5;
     border: 1px solid #aaa;
-    width: 28px;
-    height: 26px;
-    line-height: 20px;
     cursor: pointer;
 }
 
-/* Flexbox card layout */
+/* Cards container using Flexbox */
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    padding: 12px 14px;
+    gap: 13px;
+    padding: 0 12px;
 }
 
 /* Individual card */
 .card {
-    flex: 1 1 calc((100% - 24px) / 3);
+    flex: 0 0 calc((100% - 26px) / 3);
+    height: 339px;
     min-width: 0;
+
     border: 1px solid #333;
-    border-radius: 5px;
+    border-radius: 6px;
     overflow: hidden;
+    background-color: white;
 
     display: flex;
     flex-direction: column;
 }
 
-/* Mountain image */
+/* Card image */
 .card-image {
     width: 100%;
-    height: 175px;
+    height: 188px;
     object-fit: cover;
     display: block;
+    flex-shrink: 0;
 }
 
-/* Card text area */
+/* Card content */
 .card-content {
     flex: 1;
-    padding: 20px 6px 6px;
-    text-align: center;
+    padding: 20px 7px 7px;
 
     display: flex;
     flex-direction: column;
@@ -93,57 +102,77 @@ body {
 
 /* Date */
 .date {
-    color: #ff7b22;
-    font-size: 9px;
+    color: #f4a261;
+    font-size: 10px;
     margin-bottom: 4px;
 }
 
-/* Post heading */
+/* Heading */
 .card-content h3 {
-    color: #ff7b22;
+    color: #f4a261;
     font-size: 12px;
     font-weight: normal;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 /* Description */
 .description {
     width: 100%;
-    color: black;
-    text-align: justify;
     font-size: 11px;
-    line-height: 12px;
-    margin-bottom: 15px;
+    line-height: 13px;
+    text-align: justify;
+    margin-bottom: 8px;
 }
 
 /* View More button */
 .view-button {
     margin-top: auto;
     padding: 6px 9px;
+
     border: none;
-    border-radius: 7px;
-    background-color: #ffe2c2;
-    color: black;
-    font-size: 9px;
+    border-radius: 8px;
+    background-color: #ffe3c2;
+
+    font-family: inherit;
+    font-size: 10px;
     font-weight: bold;
+
     cursor: pointer;
 }
 
-/* Responsive layout for smaller screens */
-@media (max-width: 600px) {
+.view-button:hover {
+    background-color: #ffd2a0;
+}
+
+/* Responsive layout */
+@media (max-width: 650px) {
     .container {
-        flex-direction: column;
+        padding: 0 8px;
     }
 
     .card {
-        width: 100%;
+        flex-basis: calc((100% - 13px) / 2);
     }
 
     .nav-links {
-        gap: 12px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card {
+        flex-basis: 100%;
     }
 
     .card-image {
-        height: 200px;
+        height: 220px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
     }
 }
