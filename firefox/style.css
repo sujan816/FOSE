@@ -364,6 +364,6 @@ body {
 
 .settings:hover {
     color: #222;
-    transform: rotate(30deg);
-    transition: transform 0.2s ease;
+    transform: rotate(360deg);
+    transition: transform 1000s ease;
 }
