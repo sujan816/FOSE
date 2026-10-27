@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefox New Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Browser tab bar -->
+    <header class="tab-bar">
+        <div class="active-tab">
+            <img src="img/Firefox_logo,_2019.svg.webp"
+                 alt="Firefox" class="mini-logo">
+            <span>New Tab</span>
+            <span class="close-tab">×</span>
+        </div>
+
+        <span class="new-tab">+</span>
+
+        <div class="window-controls">
+            <span>−</span>
+            <span>□</span>
+            <span class="close-window">×</span>
+        </div>
+    </header>
+
+    <!-- Browser toolbar -->
+    <div class="toolbar">
+        <div class="navigation">
+            <span>‹</span>
+            <span>›</span>
+            <span>⟳</span>
+        </div>
+
+        <form class="address-bar"
+              action="https://www.google.com/search">
+            <span>⌕</span>
+            <input type="text" name="q"
+                   placeholder="Search or enter address">
+        </form>
+
+        <div class="toolbar-menu">
+            <span>^</span>
+            <span>☰</span>
+        </div>
+    </div>
+
+    <!-- Bookmarks bar -->
+    <div class="bookmarks">
+        <span>⇥ Import bookmarks...</span>
+
+        <span class="getting-started">
+            <img src="img/Firefox_logo,_2019.svg.webp"
+                 alt="Firefox" class="bookmark-logo">
+            Getting Started
+        </span>
+    </div>
+
+   <button class="settings" title="Settings" aria-label="Settings">
+    <i class="fa fa-cog"></i>
+</button>
+
+    <!-- Main dashboard -->
+    <main class="dashboard">
+
+        <div class="firefox-brand">
+            <img src="img/Firefox_logo,_2019.svg.webp"
+                 alt="Firefox logo" class="firefox-logo">
+            <h1>Firefox</h1>
+        </div>
+
+        <!-- Google search -->
+        <form class="google-search"
+              action="https://www.google.com/search">
+            <span class="google-icon">G</span>
+            <input type="text" name="q"
+                   placeholder="Search with Google or enter address">
+        </form>
+
+        <!-- Website shortcuts -->
+        <section class="shortcuts">
+
+            <a href="https://www.amazon.com" class="shortcut">
+                <div class="tile amazon">
+                    a<small>⌣</small>
+                </div>
+                <span>Amazon</span>
+                <small class="sponsored">Sponsored</small>
+            </a>
+
+            <a href="https://www.ebay.com" class="shortcut">
+                <div class="tile ebay">
+                    <span>e</span><span>b</span>
+                    <span>a</span><span>y</span>
+                </div>
+                <span>eBay</span>
+                <small class="sponsored">Sponsored</small>
+            </a>
+
+            <a href="https://www.youtube.com" class="shortcut">
+                <div class="tile">
+                    <div class="youtube">▶</div>
+                </div>
+                <span>YouTube</span>
+            </a>
+
+            <a href="https://www.facebook.com" class="shortcut">
+                <div class="tile facebook">f</div>
+                <span>Facebook</span>
+            </a>
+
+            <a href="https://www.wikipedia.org" class="shortcut">
+                <div class="tile wikipedia">W</div>
+                <span>Wikipedia</span>
+            </a>
+
+            <a href="https://www.leboncoin.fr" class="shortcut">
+                <div class="tile leboncoin">⬡</div>
+                <span>leboncoin</span>
+            </a>
+
+            <a href="https://twitter.com" class="shortcut">
+                <div class="tile twitter">♥</div>
+                <span>Twitter</span>
+            </a>
+
+            <a href="#" class="shortcut" aria-label="Add shortcut">
+                <div class="tile empty-tile"></div>
+                <span>&nbsp;</span>
+            </a>
+
+        </section>
+    </main>
+
+</body>
+</html>
